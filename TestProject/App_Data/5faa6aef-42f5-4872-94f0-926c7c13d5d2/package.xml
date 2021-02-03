@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<info>
+		<package>
+			<name>Doc Type Grid Editor</name>
+			<version>1.2.6</version>
+			<license url="https://opensource.org/licenses/MIT">MIT license</license>
+			<url>https://github.com/skttl/umbraco-doc-type-grid-editor</url>
+			<requirements>
+				<major>8</major>
+				<minor>6</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Søren Kottal, Matt Brailsford, Lee Kelleher</name>
+			<website>https://github.com/skttl/umbraco-doc-type-grid-editor/graphs/contributors</website>
+		</author>
+		<readme><![CDATA[Doc Type Grid Editor is an advanced grid editor for Umbraco 8]]></readme>
+	</info>
+
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes />
+
+	<control />
+
+	<files><file><guid>6cded228-97e2-443d-ab81-7921aad33976.css</guid><orgPath>/App_Plugins/DocTypeGridEditor/Css</orgPath><orgName>doctypegrideditor.css</orgName></file><file><guid>8ff53948-3ce2-4552-9410-fe6c039e82cc.js</guid><orgPath>/App_Plugins/DocTypeGridEditor/Js</orgPath><orgName>doctypegrideditor.controllers.js</orgName></file><file><guid>a9e36be0-e63f-4849-aca5-e063b950a2c2.js</guid><orgPath>/App_Plugins/DocTypeGridEditor/Js</orgPath><orgName>doctypegrideditor.directives.js</orgName></file><file><guid>e2805632-d022-45be-9c2d-e84360c0617a.js</guid><orgPath>/App_Plugins/DocTypeGridEditor/Js</orgPath><orgName>doctypegrideditor.resources.js</orgName></file><file><guid>bde57982-8cf1-4d0f-9d6c-9404dc87c55e.js</guid><orgPath>/App_Plugins/DocTypeGridEditor/Js</orgPath><orgName>doctypegrideditor.services.js</orgName></file><file><guid>4a5f0ec4-19c5-4730-a357-62865aa9a589.xml</guid><orgPath>/App_Plugins/DocTypeGridEditor/Lang</orgPath><orgName>da-DK.xml</orgName></file><file><guid>30a6e0d7-d09b-4f90-876b-f12c3379ebea.xml</guid><orgPath>/App_Plugins/DocTypeGridEditor/Lang</orgPath><orgName>en-GB.xml</orgName></file><file><guid>9e84ebee-c920-4ab3-aad0-622ccf7609ac.xml</guid><orgPath>/App_Plugins/DocTypeGridEditor/Lang</orgPath><orgName>en-US.xml</orgName></file><file><guid>69add775-10a0-4a54-ad7f-f080cf9f6309.manifest</guid><orgPath>/App_Plugins/DocTypeGridEditor</orgPath><orgName>package.manifest</orgName></file><file><guid>13948762-2f73-47ad-b5e9-d3ced2045b0e.cshtml</guid><orgPath>/App_Plugins/DocTypeGridEditor/Render</orgPath><orgName>DocTypeGridEditor.cshtml</orgName></file><file><guid>e592b0dd-07a0-43f1-807d-b1d9ee1fc2ab.cshtml</guid><orgPath>/App_Plugins/DocTypeGridEditor/Render</orgPath><orgName>DocTypeGridEditorPreviewer.cshtml</orgName></file><file><guid>97050cf0-478c-4a70-97ae-fc4d02746c02.html</guid><orgPath>/App_Plugins/DocTypeGridEditor/Views</orgPath><orgName>doctypegrideditor.dialog.html</orgName></file><file><guid>d8b3a836-38be-4c73-bfba-8922af04d7f4.html</guid><orgPath>/App_Plugins/DocTypeGridEditor/Views</orgPath><orgName>doctypegrideditor.html</orgName></file><file><guid>e6ce62e9-823d-4df6-9e29-283c05f8884b.dll</guid><orgPath>/bin</orgPath><orgName>Our.Umbraco.DocTypeGridEditor.dll</orgName></file></files>
+
+</umbPackage>
