@@ -1,0 +1,43 @@
+/**umb_name:White button*/
+.WhiteButton {
+    color: #4c4c4c;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: normal;
+    font-family: S-Regular;
+    cursor: pointer;
+}
+
+/**umb_name:Green button*/
+
+.GreenButton {
+    text-transform: uppercase;
+    font-family: S-Regular;
+    width: 326px;
+    padding: 13px;
+    border-radius: 25px;
+    background: #a6b21f;
+    outline: 0;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    border: 0;
+}
+
+/**umb_name:Green empty button*/
+
+.GreenEmptyButton {
+    text-transform: uppercase;
+    font-family: S-Regular;
+    width: 326px;
+    padding: 13px;
+    border-radius: 25px;
+    outline: 0;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    border: 4px solid #a6b21f !important;
+}
