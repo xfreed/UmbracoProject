@@ -1,0 +1,8 @@
+﻿@model TestProject.Models.ContactFormViewModel
+
+@using (Html.BeginUmbracoForm("Submit", "ContactForm"))
+{
+    @Html.TextBoxFor(m => m.Name, new {@class="input-form", @placeholder="Ваше ім`я"})
+    @Html.TextBoxFor(m => m.Phone, new { @class = "input-form", @placeholder = "Номер телефону" })
+    <input type="submit" name="Submit" value="Submit" class="GreenButton" />
+}

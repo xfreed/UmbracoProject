@@ -1,0 +1,11 @@
+﻿@inherits UmbracoViewPage
+
+@{
+    var modelParsed = new CircleWithText(Model);
+}
+<div class="res-circle">
+    <div class="circle-txt">
+        @modelParsed.CircleText
+    </div>
+</div>
+<br/>

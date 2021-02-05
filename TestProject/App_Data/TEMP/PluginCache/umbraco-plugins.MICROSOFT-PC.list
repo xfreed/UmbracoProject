@@ -222,6 +222,7 @@ Umbraco.ModelsBuilder.Validation.MediaTypeModelValidator, Umbraco.ModelsBuilder,
 Umbraco.ModelsBuilder.Validation.MemberTypeModelValidator, Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Umbraco.ModelsBuilderApplication, Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Umbraco.ModelsBuilderBackOfficeController, Umbraco.ModelsBuilder, Version=3.0.10.102, Culture=neutral, PublicKeyToken=null
+TestProject.Controllers.ContactController, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 umbraco.cms.businesslogic.packager.standardPackageActions.addApplication, cms, Version=1.0.6806.26194, Culture=neutral, PublicKeyToken=null
 umbraco.cms.businesslogic.packager.standardPackageActions.addDashboardSection, cms, Version=1.0.6806.26194, Culture=neutral, PublicKeyToken=null
 umbraco.cms.businesslogic.packager.standardPackageActions.addProxyFeedHost, cms, Version=1.0.6806.26194, Culture=neutral, PublicKeyToken=null
@@ -608,6 +609,7 @@ Umbraco.Web.PropertyEditors.ValueConverters.RteMacroRenderingValueConverter, umb
 
 Umbraco.Web.Mvc.SurfaceController
 
+TestProject.Controllers.ContactController, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbProfileController, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginStatusController, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
@@ -680,11 +682,13 @@ Umbraco.Web.Editors.MediaController, umbraco, Version=1.0.6806.26196, Culture=ne
 
 Umbraco.Core.Models.PublishedContent.PublishedContentModel
 
+Umbraco.Web.PublishedContentModels.CircleWithText, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedContentModels.File, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedContentModels.Folder, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedContentModels.Home, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedContentModels.Image, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedContentModels.Member, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.PublishedContentModels.Slider, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.PropertyEditors.IParameterEditor
 
@@ -886,6 +890,25 @@ Umbraco.Core.Persistence.Mappers.ServerRegistrationMapper, Umbraco.Core, Version
 Umbraco.Core.Persistence.Mappers.UmbracoEntityMapper, Umbraco.Core, Version=1.0.6806.26190, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Persistence.Mappers.UserMapper, Umbraco.Core, Version=1.0.6806.26190, Culture=neutral, PublicKeyToken=null
 
+Umbraco.Web.HealthCheck.HealthCheck
+
+Umbraco.Web.HealthCheck.Checks.Permissions.FolderAndFilePermissionsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Services.SmtpCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Config.MacroErrorsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Config.NotificationEmailCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Config.TrySkipIisCustomErrorsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Config.CustomErrorsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Config.TraceCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Config.CompilationDebugCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Security.XssProtectionCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Security.HstsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Security.NoSniffCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Security.ExcessiveHeadersCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Security.ClickJackingCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.Security.HttpsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.DataIntegrity.DatabaseSchemaValidationHealthCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.HealthCheck.Checks.DataIntegrity.XmlDataIntegrityHealthCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+
 umbraco.interfaces.ICacheRefresher
 
 Umbraco.Web.Cache.ApplicationCacheRefresher, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
@@ -910,22 +933,8 @@ Umbraco.Web.Cache.UnpublishedPageCacheRefresher, umbraco, Version=1.0.6806.26196
 Umbraco.Web.Cache.UserCacheRefresher, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserGroupPermissionsCacheRefresher, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
 
-Umbraco.Web.HealthCheck.HealthCheck
+umbraco.cms.businesslogic.macro.IMacroEngine
 
-Umbraco.Web.HealthCheck.Checks.Permissions.FolderAndFilePermissionsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Services.SmtpCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Config.MacroErrorsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Config.NotificationEmailCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Config.TrySkipIisCustomErrorsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Config.CustomErrorsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Config.TraceCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Config.CompilationDebugCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Security.XssProtectionCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Security.HstsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Security.NoSniffCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Security.ExcessiveHeadersCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Security.ClickJackingCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.Security.HttpsCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.DataIntegrity.DatabaseSchemaValidationHealthCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.HealthCheck.Checks.DataIntegrity.XmlDataIntegrityHealthCheck, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
+umbraco.MacroEngines.RazorMacroEngine, umbraco.MacroEngines, Version=1.0.6806.26199, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.Macros.PartialViewMacroEngine, umbraco, Version=1.0.6806.26196, Culture=neutral, PublicKeyToken=null
 

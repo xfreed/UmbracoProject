@@ -42,15 +42,13 @@
 
 .top-menu {
     display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     align-items: center;
+    -o-justify-content: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 
-ol, ul { list-style: none; }
 
 .top-menu ul li {
     display: inline-block;
@@ -68,10 +66,10 @@ ol, ul { list-style: none; }
 footer {
     min-height: 40px;
     display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -webkit-align-items: center;
     align-items: center;
     background: #a6b21f;
 }
@@ -83,7 +81,7 @@ footer {
 }
 
 p {
-    font-size: 35px;
+    font-size: 19px;
     font-family: S-Regular;
     color: #4c4c4c;
     margin-bottom: 60px;
@@ -99,4 +97,98 @@ p {
     line-height: normal;
     color: #fff;
     margin-bottom: 20px;
+}
+
+.res-circle {
+    height: 130px;
+    width: 130px;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    border: 4px solid #a6b21f !important;
+    line-height: 0;
+    position: relative;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.res-circle:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+    .res-circle:hover {
+        -webkit-transform: scale(1.3);
+    }
+.circle-txt {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.element-center{
+	display: table;
+	margin: 0 auto;	
+}
+#ScrollBack {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    background: url(../Media/1006/arrow-01.png) no-repeat 50% 50%;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+.image-block {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+.border-dotted {
+    height: 2px;
+    width: 385px;
+    background: #a6b21f;
+    position: relative;
+    left: 50%;
+    margin-left: -192.5px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.info-text-block ul {
+    list-style-image: url(../Media/1008/pick.png);
+}
+.info-text-block ul li {
+    padding: 10px;
+    font-size: 18px;
+    color: #4c4c4c;
+}
+.title-info {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #4c4c4c;
+    padding-left: 4rem;
+}
+.input-form {
+    display: block;
+    width: 300px;
+    margin-bottom: 26px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    outline: 0;
+    border: 0;
+    padding: 13px;
+    text-align: center;
+    font-size: 16px;
 }
