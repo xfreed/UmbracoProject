@@ -75,7 +75,7 @@ footer {
 }
 
 .block-images--header {
-    min-height: calc(100vh - 50px);
+    max-height: calc(100vh - 50px);
     background-size: cover;
     position: relative;
 }
@@ -84,7 +84,7 @@ p {
     font-size: 19px;
     font-family: S-Regular;
     color: #4c4c4c;
-    margin-bottom: 60px;
+    
 }
 
 .content-text { padding-left: 100px; }
@@ -191,4 +191,14 @@ p {
     padding: 13px;
     text-align: center;
     font-size: 16px;
+}
+.text-callback {
+    color: #fff;
+    font-family: S-Regular;
+    font-size: 20px;
+    line-height: normal;
+}
+.title-callback {
+    font-size: 40px;
+    color: #fff;
 }

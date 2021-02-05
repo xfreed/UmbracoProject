@@ -46,12 +46,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Title
+		/// Image
 		///</summary>
-		[ImplementPropertyType("sliderTitle")]
-		public string SliderTitle
+		[ImplementPropertyType("sliderImage")]
+		public IEnumerable<IPublishedContent> SliderImage
 		{
-			get { return this.GetPropertyValue<string>("sliderTitle"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("sliderImage"); }
 		}
 	}
 }

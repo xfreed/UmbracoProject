@@ -2,6 +2,8 @@
 
 @{
     var modelParsed = new Slider(Model);
+    var s = modelParsed;
 }
 
-<h1>@modelParsed.SliderTitle</h1>   
+@*<h1>@modelParsed.SliderImage</h1>*@
+<img src="@Umbraco.Media(modelParsed.SliderImage).Url" alt="">
