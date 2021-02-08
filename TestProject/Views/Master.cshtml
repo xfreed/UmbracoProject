@@ -5,6 +5,7 @@
     <title>bioseptUmbraco</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/rde.css">
 
@@ -12,41 +13,43 @@
 </head>
 
 <body>
-<button onclick="topFunction()" id="ScrollBack" title="Go to top" style="display: block;"></button>
-<header>
-    <div class="container w1200">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="wrapper-tel-number">
-                    <span>+38 (096) 399 02 77<br></span><span>+38 (096) 399 02 77<br></span><span id="ua" class="translate">UA<br></span><span id="ru" class="translate">RU<br></span>
+    <button onclick="topFunction()" id="ScrollBack" title="Go to top" style="display: block;"></button>
+    <header>
+        <div class="container w1200">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrapper-tel-number">
+                        <span>+38 (096) 399 02 77<br></span><span>+38 (096) 399 02 77<br></span><span id="ua" class="translate">UA<br></span><span id="ru" class="translate">RU<br></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-menu">
+                        <div class="logo"></div>
+                        <ul class="list-inline">
+                            <li>Головна</li>
+                            <li>Про нас</li>
+                            <li>Продукція</li>
+                            <li>Прайс</li>
+                            <li>Партнерам</li>
+                            <li>Контакти</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="top-menu">
-                    <div class="logo"></div>
-                    <ul class="list-inline">
-                        <li>Головна</li>
-                        <li>Про нас</li>
-                        <li>Продукція</li>
-                        <li>Прайс</li>
-                        <li>Партнерам</li>
-                        <li>Контакти</li>
-                    </ul>
-                </div>
-            </div>
+    </header>
+    @RenderBody()
+    <footer>
+        <div class="wrap-footer">
+            <span>© 2019 Biosept. All rights reserved.<br></span>
         </div>
-    </div>
-</header>
-@RenderBody()
-<footer>
-    <div class="wrap-footer">
-        <span>© 2019 Biosept. All rights reserved.<br></span>
-    </div>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="../scripts/main.js"></script>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

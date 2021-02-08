@@ -202,3 +202,10 @@ p {
     font-size: 40px;
     color: #fff;
 }
+.carousel-slick {
+    height: 502px;
+}
+.carousel-slick div img {
+    height: 502px;
+    width: 753px;
+}
