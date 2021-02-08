@@ -20,16 +20,16 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Umbraco.Web.PublishedContentModels
 {
-	/// <summary>Slider</summary>
-	[PublishedContentModel("slider")]
-	public partial class Slider : PublishedContentModel
+	/// <summary>Slide item</summary>
+	[PublishedContentModel("slideItem")]
+	public partial class SlideItem : PublishedContentModel
 	{
 #pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "slider";
+		public new const string ModelTypeAlias = "slideItem";
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 #pragma warning restore 0109
 
-		public Slider(IPublishedContent content)
+		public SlideItem(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -40,18 +40,36 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 #pragma warning restore 0109
 
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Slider, TValue>> selector)
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SlideItem, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 
 		///<summary>
-		/// SlideItems
+		/// slideImage
 		///</summary>
-		[ImplementPropertyType("slideItems")]
-		public IEnumerable<IPublishedContent> SlideItems
+		[ImplementPropertyType("slideImage")]
+		public IPublishedContent SlideImage
 		{
-			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("slideItems"); }
+			get { return this.GetPropertyValue<IPublishedContent>("slideImage"); }
+		}
+
+		///<summary>
+		/// Slide title
+		///</summary>
+		[ImplementPropertyType("slideTitle")]
+		public string SlideTitle
+		{
+			get { return this.GetPropertyValue<string>("slideTitle"); }
+		}
+
+		///<summary>
+		/// Slide url
+		///</summary>
+		[ImplementPropertyType("slideUrl")]
+		public string SlideUrl
+		{
+			get { return this.GetPropertyValue<string>("slideUrl"); }
 		}
 	}
 }

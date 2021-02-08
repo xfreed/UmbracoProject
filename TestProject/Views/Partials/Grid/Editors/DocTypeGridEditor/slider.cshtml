@@ -2,17 +2,21 @@
 
 @{
     var modelParsed = new Slider(Model);
-    var s = modelParsed.SliderImage;
 }
 
-@*<h1>@modelParsed.SliderImage</h1>*@
 <div class="carousel-slick">
     @{
-        foreach (var imageContent in modelParsed.SliderImage)
+        if (modelParsed.SlideItems != null)
         {
-            <div>
-                <img src="@Umbraco.Media(imageContent.Id).Url" alt="">
-            </div>
+            foreach (var imageContent in modelParsed.SlideItems.Select(x => new SlideItem(x)))
+            {
+                <div>
+                    <a href="@imageContent.SlideUrl">
+                        <h1>@imageContent.SlideTitle</h1>
+                        <img src="@if (imageContent.SlideImage.Url != null) {@imageContent.SlideImage.Url }" alt="">
+                    </a>
+                </div>
+            }
         }
     }
 </div>

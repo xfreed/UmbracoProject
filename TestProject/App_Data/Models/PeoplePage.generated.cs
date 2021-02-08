@@ -20,16 +20,16 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Umbraco.Web.PublishedContentModels
 {
-	/// <summary>Slider</summary>
-	[PublishedContentModel("slider")]
-	public partial class Slider : PublishedContentModel
+	/// <summary>People page</summary>
+	[PublishedContentModel("peoplePage")]
+	public partial class PeoplePage : PublishedContentModel
 	{
 #pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "slider";
+		public new const string ModelTypeAlias = "peoplePage";
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 #pragma warning restore 0109
 
-		public Slider(IPublishedContent content)
+		public PeoplePage(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -40,18 +40,9 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 #pragma warning restore 0109
 
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Slider, TValue>> selector)
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<PeoplePage, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-		}
-
-		///<summary>
-		/// SlideItems
-		///</summary>
-		[ImplementPropertyType("slideItems")]
-		public IEnumerable<IPublishedContent> SlideItems
-		{
-			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("slideItems"); }
 		}
 	}
 }

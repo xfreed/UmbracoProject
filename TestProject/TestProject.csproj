@@ -297,6 +297,7 @@
     <Compile Include="App_Data\Models\Home.generated.cs" />
     <Compile Include="App_Data\Models\Image.generated.cs" />
     <Compile Include="App_Data\Models\Member.generated.cs" />
+    <Compile Include="App_Data\Models\SlideItem.generated.cs" />
     <Compile Include="App_Data\Models\Slider.generated.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Models\ContactFormViewModel.cs" />

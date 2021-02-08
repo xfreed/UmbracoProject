@@ -1,10 +1,13 @@
 $(document).ready(function(){
   $('.carousel-slick').slick({
-        slidesToShow: 3,
-         slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows : false
+            infinite: true,
+            speed: 1000,
+            adaptiveHeight: true,
+            variableWidth: true,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
   });
 });
 function topFunction() {
