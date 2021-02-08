@@ -56,7 +56,7 @@
       "viewPath": "/Views/Partials/Grid/Editors/DocTypeGridEditor/",
       "previewViewPath": "/Views/Partials/Grid/Editors/DocTypeGridEditor/Previews/",
       "previewCssFilePath": "",
-      "previewJsFilePath": ""
+      "previewJsFilePath": ""   
     }
   }
 ]
